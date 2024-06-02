@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div class="landing col-xxl-12 col-xl-12 row">
+            <input
+                type="radio"
+                class="checked"
+                id="checked"
+                name="check"
+                hidden
+            />
+            <input
+                type="radio"
+                class="checked1"
+                id="checked1"
+                name="check"
+                hidden
+                checked
+            />
+            <div class="landing-decoration"></div>
+
+            <div class="landing-info col-xxl-6 col-xl-12">
+                <div class="logo">
+                    <div class="icon-logo-mu">
+                        <img class="logo-mu" src="./img/mu.png" alt="Mu" />
+                    </div>
+                </div>
+
+                <h2 class="landing-info-pretitle">Welcome to</h2>
+
+                <h1 class="landing-info-title">Manchester United</h1>
+
+                <p class="landing-info-text">
+                    The next generation social network &amp; community! Connect
+                    with your friends and play with our quests and badges
+                    gamification system!
+                </p>
+
+                <!-- TAB SWITCH -->
+                <div class="tab-switch">
+                    <label for="checked1">
+                        <p class="tab-switch-button tab-switch-button-1">
+                            Login
+                        </p>
+                    </label>
+
+                    <label for="checked">
+                        <p class="tab-switch-button tab-switch-button-2">
+                            Register
+                        </p>
+                    </label>
+                </div>
+                <!-- /TAB SWITCH -->
+            </div>
+
+            <!-- /LANDING INFO -->
+
+            <!-- LANDING FORM -->
+            <div class="landing-form col-xxl-6 col-xl-12">
+                <!-- FORM BOX -->
+                <label class="checked-login-register1" for="checked1">
+                    <div class="form-box login-register-form-element">
+                        <!-- FORM BOX DECORATION -->
+                        <img
+                            class="form-box-decoration overflowing"
+                            src="https://odindesignthemes.com/vikinger/img/landing/rocket.png"
+                            alt="rocket"
+                        />
+                        <!-- /FORM BOX DECORATION -->
+
+                        <!-- FORM BOX TITLE -->
+                        <h2 class="form-box-title">Account Login</h2>
+                        <!-- /FORM BOX TITLE -->
+
+                        <!-- FORM -->
+                        <form class="form">
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- FORM INPUT -->
+                                    <div class="form-input">
+                                        <input
+                                            type="text"
+                                            id="login-username"
+                                            name="login_username"
+                                            placeholder=""
+                                        />
+                                        <label for="login-username"
+                                            >Username or Email</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- FORM INPUT -->
+                                    <div class="form-input">
+                                        <input
+                                            type="password"
+                                            id="login-password"
+                                            name="login_password"
+                                            placeholder=""
+                                        />
+                                        <label for="login-password"
+                                            >Password</label
+                                        >
+                                    </div>
+                                    <!-- /FORM INPUT -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row space-between">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- CHECKBOX WRAP -->
+                                    <div class="checkbox-wrap">
+                                        <input
+                                            type="checkbox"
+                                            id="login-remember"
+                                            name="login_remember"
+                                            checked
+                                        />
+                                        <!-- CHECKBOX BOX -->
+                                        <div class="checkbox-box">
+                                            <!-- ICON CROSS -->
+                                            <i class="fa-solid fa-x"></i>
+                                            <!-- /ICON CROSS -->
+                                        </div>
+                                        <!-- /CHECKBOX BOX -->
+                                        <label for="login-remember"
+                                            >Remember Me</label
+                                        >
+                                    </div>
+                                    <!-- /CHECKBOX WRAP -->
+                                </div>
+                                <!-- /FORM ITEM -->
+
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <a class="form-link" href="#"
+                                        >Forgot Password?</a
+                                    >
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <div class="form-item">
+                                    <button class="button medium secondary">
+                                        Login to your Account!
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- /FORM ROW -->
+                        </form>
+                        <!-- /FORM -->
+
+                        <!-- LINED TEXT -->
+                        <p class="lined-text">Login with your Social Account</p>
+                        <!-- /LINED TEXT -->
+
+                        <!-- SOCIAL LINKS -->
+                        <div class="social-links">
+                            <a class="social-link facebook" href="#">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+
+                            <a class="social-link twitter" href="#">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+
+                            <a class="social-link twitch" href="#">
+                                <i class="fa-brands fa-twitch"></i>
+                            </a>
+
+                            <a class="social-link youtube" href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </label>
+                <!-- FORM BOX -->
+                <label class="checked-login-register2" for="checked">
+                    <div
+                        for="checked"
+                        class="form-box login-register-form-element"
+                        style=""
+                    >
+                        <!-- FORM BOX DECORATION -->
+                        <img
+                            class="form-box-decoration"
+                            src="https://odindesignthemes.com/vikinger/img/landing/rocket.png"
+                            alt="rocket"
+                        />
+                        <!-- /FORM BOX DECORATION -->
+
+                        <!-- FORM BOX TITLE -->
+                        <h2 class="form-box-title">Create your Account!</h2>
+                        <!-- /FORM BOX TITLE -->
+
+                        <!-- FORM -->
+                        <form class="form">
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- FORM INPUT -->
+                                    <div class="form-input">
+                                        <input
+                                            type="text"
+                                            id="register-email"
+                                            name="register_email"
+                                            placeholder=""
+                                        />
+                                        <label for="register-email"
+                                            >Your Email</label
+                                        >
+                                    </div>
+                                    <!-- /FORM INPUT -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- FORM INPUT -->
+                                    <div class="form-input">
+                                        <input
+                                            type="text"
+                                            id="register-username"
+                                            name="register_username"
+                                            placeholder=""
+                                        />
+                                        <label for="register-username"
+                                            >Username</label
+                                        >
+                                    </div>
+                                    <!-- /FORM INPUT -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- FORM INPUT -->
+                                    <div class="form-input">
+                                        <input
+                                            type="password"
+                                            id="register-password"
+                                            name="register_password"
+                                            placeholder=""
+                                        />
+                                        <label for="register-password"
+                                            >Password</label
+                                        >
+                                    </div>
+                                    <!-- /FORM INPUT -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- FORM INPUT -->
+                                    <div class="form-input">
+                                        <input
+                                            type="password"
+                                            id="register-password-repeat"
+                                            name="register_password_repeat"
+                                            placeholder=""
+                                        />
+                                        <label for="register-password-repeat"
+                                            >Repeat Password</label
+                                        >
+                                    </div>
+                                    <!-- /FORM INPUT -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- CHECKBOX WRAP -->
+                                    <div class="checkbox-wrap">
+                                        <input
+                                            type="checkbox"
+                                            id="register-newsletter"
+                                            name="register_newsletter"
+                                            checked
+                                        />
+                                        <!-- CHECKBOX BOX -->
+                                        <div class="checkbox-box">
+                                            <!-- ICON CROSS -->
+                                            <i class="fa-brands fa-x"> </i>
+                                            <!-- /ICON CROSS -->
+                                        </div>
+                                        <!-- /CHECKBOX BOX -->
+                                        <label for="register-newsletter"
+                                            >Send me news and updates via
+                                            email</label
+                                        >
+                                    </div>
+                                    <!-- /CHECKBOX WRAP -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+
+                            <!-- FORM ROW -->
+                            <div class="form-row">
+                                <!-- FORM ITEM -->
+                                <div class="form-item">
+                                    <!-- BUTTON -->
+                                    <button class="button medium primary">
+                                        Register Now!
+                                    </button>
+                                    <!-- /BUTTON -->
+                                </div>
+                                <!-- /FORM ITEM -->
+                            </div>
+                            <!-- /FORM ROW -->
+                        </form>
+                        <!-- /FORM -->
+
+                        <!-- FORM TEXT -->
+                        <p class="form-text">
+                            You'll receive a confirmation email in your inbox
+                            with a link to activate your account. If you have
+                            any problems,
+                            <a href="#">contact us</a>!
+                        </p>
+                        <!-- /FORM TEXT -->
+                    </div>
+                </label>
+                <!-- /FORM BOX -->
+            </div>
+            <!-- /LANDING FORM -->
+        </div>
+        <!-- /LANDING -->
+    </body>
+</html>
