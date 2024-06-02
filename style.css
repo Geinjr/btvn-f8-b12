@@ -380,12 +380,12 @@
         max-width: 100%;
     }
 }
-
+/* 
 @media screen and (min-width: 1300px) {
     .container {
         padding: 0;
     }
-}
+} */
 
 @media screen and (min-width: 1400px) {
     .col-xxl-1 {
@@ -460,7 +460,7 @@
     height: 100%;
     position: absolute;
     top: 50%;
-    right: 13%;
+    right: 10%;
     transform: translateY(-41%);
 }
 
@@ -838,7 +838,7 @@ input[type="password"] {
     visibility: hidden;
     z-index: 2;
     position: absolute;
-    top: -11%;
+    top: -6%;
 }
 
 p a {
@@ -871,7 +871,7 @@ p a {
     display: block;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
     .landing .landing-decoration {
         display: none;
     }
@@ -882,4 +882,66 @@ p a {
 }
 
 @media screen and (max-width: 1365px) {
+    .landing {
+        padding: 80px 0 100px;
+        position: static;
+    }
+
+    .landing-info-text {
+        display: none;
+    }
+    .landing-info,
+    .landing-form {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .landing-info {
+        width: 100%;
+    }
+
+    .landing-form {
+        margin-top: 30px;
+    }
+
+    .checked-login-register1 {
+        display: none;
+    }
+
+    .checked:checked ~ .landing-form .checked-login-register2 {
+        display: block;
+    }
+    .checked-login-register2 {
+        display: none;
+    }
+
+    .checked1:checked ~ .landing-form .checked-login-register1 {
+        display: block;
+    }
+
+    .form-box-decoration {
+        display: none;
+    }
+    /* .checked1:checked
+    ~ .landing-info,
+    .checked-login-register1,
+    .form,
+    .form-row,
+    .form-item,
+    .form-input input[type="text"]:focus + label {
+        background-color: #fff;
+        padding: 0 6px;
+        font-size: 0.75rem;
+        top: -6px;
+        left: 12px;
+    } */
+
+    .form-input input[type="text"]:focus + label,
+    .form-input input[type="password"]:focus + label {
+        background-color: #fff;
+        padding: 0 6px;
+        font-size: 0.75rem;
+        top: -6px;
+        left: 12px;
+    }
 }
