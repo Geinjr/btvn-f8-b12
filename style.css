@@ -615,6 +615,7 @@ input[type="password"] {
 
 .checkbox-wrap {
     position: relative;
+    display: flex;
 }
 
 .checkbox-wrap .checkbox-box {
@@ -645,6 +646,15 @@ input[type="password"] {
     font-weight: 700;
     line-height: 22px;
     cursor: pointer;
+    display: block;
+}
+.checkbox-wrap .rember {
+    padding-left: 36px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 22px;
+    cursor: pointer;
+    display: block;
 }
 
 .space-between {
@@ -893,55 +903,59 @@ p a {
     .landing-info,
     .landing-form {
         position: static;
-        margin: 0 auto;
+    }
+
+    .landing-form {
+        width: 100%;
     }
 
     .landing-info {
         width: 100%;
     }
 
-    .landing-form {
-        margin-top: 30px;
+    .checked-login-register1 {
+        position: static;
+        display: none;
     }
 
-    .checked-login-register1 {
+    .checked-login-register2 {
+        position: static;
         display: none;
     }
 
     .checked:checked ~ .landing-form .checked-login-register2 {
+        position: static;
         display: block;
-    }
-    .checked-login-register2 {
-        display: none;
+        margin-top: 370px;
     }
 
     .checked1:checked ~ .landing-form .checked-login-register1 {
+        position: static;
         display: block;
+        margin-top: 310px;
+    }
+
+    .login-register-form-element {
+        margin: 0 auto;
     }
 
     .form-box-decoration {
         display: none;
     }
-    /* .checked1:checked
-    ~ .landing-info,
-    .checked-login-register1,
-    .form,
-    .form-row,
-    .form-item,
-    .form-input input[type="text"]:focus + label {
-        background-color: #fff;
-        padding: 0 6px;
-        font-size: 0.75rem;
-        top: -6px;
-        left: 12px;
-    } */
+}
 
-    .form-input input[type="text"]:focus + label,
-    .form-input input[type="password"]:focus + label {
-        background-color: #fff;
-        padding: 0 6px;
-        font-size: 0.75rem;
-        top: -6px;
-        left: 12px;
+@media screen and (max-width: 601px) {
+    .login-register-form-element {
+        width: 90%;
+        padding: 64px 30px;
+    }
+}
+@media screen and (max-width: 366px) {
+    .space-between {
+        display: block;
+    }
+
+    .form-item2 {
+        padding-top: 10px;
     }
 }
